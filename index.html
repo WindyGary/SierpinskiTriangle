@@ -15,7 +15,21 @@
 				</canvas>
 		    </section>
 	    <footer>
-		    SierpinskiTriangle
+		     <p id="apple"> Recursion...<p/>
+		     <p id="banana"> </p>
 	    </footer>
+		<script>
+		window.onscroll = function() {prtText()};
+
+		function prtText() {
+   		var scrollPosition = window.innerHeight + window.pageYOffset;
+    		var totalHeight = document.documentElement.scrollHeight;
+
+    		if (scrollPosition >= totalHeight) {
+        	var txt = '\n' + document.getElementById("apple").innerHTML;
+        	document.getElementById("banana").innerText += txt;
+   		}
+	}
+		</script>
 	</body>
 </html>
