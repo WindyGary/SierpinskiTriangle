@@ -26,8 +26,8 @@
    		var scrollPosition = window.innerHeight + window.pageYOffset;
     		var totalHeight = document.documentElement.scrollHeight;
 
-    		if (scrollPosition >= totalHeight-50) {
-        	var txt = '\n' + document.getElementById("apple").innerHTML;
+    		if (scrollPosition >= totalHeight-150) {
+        	var txt = document.getElementById("apple").innerHTML + '\n';
         	document.getElementById("banana").innerText += txt;
    		}
 	}
