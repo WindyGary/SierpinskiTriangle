@@ -15,8 +15,9 @@
 				</canvas>
 		    </section>
 	    <footer>
-		     <p id="apple"> Recursion...<p/>
+		    <b>Scroll?</b>
 		     <p id="banana"> </p>
+		    <p id="apple"> Recursion...<p/>
 	    </footer>
 		<script>
 		window.onscroll = function() {prtText()};
@@ -25,7 +26,7 @@
    		var scrollPosition = window.innerHeight + window.pageYOffset;
     		var totalHeight = document.documentElement.scrollHeight;
 
-    		if (scrollPosition >= totalHeight) {
+    		if (scrollPosition >= totalHeight-10) {
         	var txt = '\n' + document.getElementById("apple").innerHTML;
         	document.getElementById("banana").innerText += txt;
    		}
