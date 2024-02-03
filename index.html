@@ -16,8 +16,8 @@
 		    </section>
 	    <footer>
 		    <b>Scroll?</b>
-		     <p id="banana"> </p>
 		    <p id="apple"> Recursion...<p/>
+		    <p id="banana"> </p>
 	    </footer>
 		<script>
 		window.onscroll = function() {prtText()};
@@ -26,7 +26,7 @@
    		var scrollPosition = window.innerHeight + window.pageYOffset;
     		var totalHeight = document.documentElement.scrollHeight;
 
-    		if (scrollPosition >= totalHeight-10) {
+    		if (scrollPosition >= totalHeight-50) {
         	var txt = '\n' + document.getElementById("apple").innerHTML;
         	document.getElementById("banana").innerText += txt;
    		}
